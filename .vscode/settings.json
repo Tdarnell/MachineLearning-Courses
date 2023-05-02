@@ -1,0 +1,41 @@
+{
+    "python.formatting.provider": "black",
+    "python.languageServer": "Pylance",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoImportUserSymbols": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "editor.wordWrap": "on",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "fileHeaderComment.parameter":{
+        "*": {
+            "author": "Darnell#5336"
+        }
+    },
+    "fileHeaderComment.template": {
+        "*": [
+            "${commentbegin}",
+            "${commentprefix} Copyright ${date} ${author}",
+            "${commentprefix} ",
+            "${commentprefix} This software is licensed under the terms of the LICENSE file included in this repository",
+            "${commentend}"
+        ],
+        "ipynb": [
+            "${commentbegin}",
+            "${commentprefix} File created on ${datetime24h} by ${author}, named ${filename}",
+            "${commentprefix} ",
+            "${commentend}",
+            "import pandas as pd",
+            "import numpy as np",
+            "import matplotlib.pyplot as plt",
+            "import datetime as dt",
+            "from pathlib import Path",
+        ]
+    }
+}
